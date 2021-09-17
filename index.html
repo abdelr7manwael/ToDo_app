@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+
+    <h2 class="text-center display-3">Welcome At Todo App</h2>
+
+    
+ 
+    
+        <button onclick="showmodelfunc()" id="mb" class="btn  btn-info btn-block w-50 my-5 mx-auto  ">
+            Add Task 
+        </button>    
+   
+    
+    
+
+    <div class="modal" id="model">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body bg-dark">
+                <label for="">Add Task</label>
+                <input type="text" id="TaskInput" placeholder="Add Task" class="form-control mb-4">
+                <div id="val" class="alert alert-danger none mt-1">
+                   
+                </div>
+            <button id="AddBtn" class="btn btn-info">Add Task</button>
+            </div>
+            <div class="modal-footer " style="background-color: darkgray;">
+              <button type="button" onclick="closeshowfunc()" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+   
+   
+   
+    <div class="container col-lg-8 mt-5">
+        <div class="card">
+            <div class="card-body">
+                <div id="NoTasks" class="alert alert-danger">
+                    <h6 class="text-center">No Tasks Added Yet</h6>
+                </div>
+                <div class="" id="AllTasks">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

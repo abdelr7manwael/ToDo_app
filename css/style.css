@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    color: cornsilk;
+}
+
+.card{
+    background-color: #333;
+}
+
+.none{
+    display: none;
+    
+}
+
+.checked{
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+.block{
+    display: block;
+}
